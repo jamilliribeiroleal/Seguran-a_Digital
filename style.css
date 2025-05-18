@@ -425,7 +425,49 @@ section {
     margin-left: 0;
     width: 100%;
   }
+
+  .about .row .content,
+  .intro .row .content,
+  .malware .row .content {
+    padding: 2rem;
+  }
+
+  .conteudo .box-container .boxes {
+    width: 100%;
+    padding: 3rem 2rem;
+  }
+
+  .conteudo .box-container .boxes p {
+    padding: 1rem;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar a {
+    margin: 1rem 0;
+  }
+
+  .icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .icons img {
+    width: 30px;
+    height: 30px;
+    margin: 0.5rem;
+  }
+
+  .site-footer {
+    font-size: 13px;
+    padding: 20px 10px;
+  }
 }
+
 
 
 
