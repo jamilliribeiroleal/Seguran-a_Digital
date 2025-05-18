@@ -338,94 +338,75 @@ section {
   width: 100%;
 }
 
+/* === RESPONSIVIDADE === */
 @media (max-width: 768px) {
-
-  html {
-    font-size: 8px;
+  :root {
+    font-size: 9px;
   }
 
   .header section {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
   }
 
   .navbar {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-    margin-top: 1rem;
+    flex-direction: column;
+    align-items: center;
   }
 
   .navbar a {
+    margin: 0.5rem 0;
+    font-size: 2rem;
+  }
+
+  .icons img {
     margin: 0.5rem;
-    font-size: 1.6rem;
+    width: 30px;
+    height: 30px;
   }
 
   .home-conteiner section {
     flex-direction: column;
     text-align: center;
+    padding: 2rem;
   }
 
-  .home-conteiner .content h3 {
-    font-size: 3.5rem;
+  .content h3 {
+    font-size: 4rem;
     padding-top: 100px;
   }
 
-  .home-conteiner .content p {
+  .content p {
     font-size: 2rem;
     padding: 2rem;
   }
 
   .content .btn {
-    margin-left: 0;
-    margin-top: 2rem;
+    margin: 2rem auto;
   }
 
   .intro .row,
   .malware .row,
   .about .row {
     flex-direction: column;
+    align-items: center;
     text-align: center;
+    margin-left: 0;
+    width: 100%;
   }
 
   .intro .row img,
-  .malware .row .conteiner-image img,
-  .about .row img {
-    width: 80%;
+  .malware .row .conteiner-image img {
     margin: 0 auto;
   }
 
-  .intro .row .content,
-  .malware .row .content,
-  .about .row .content {
-    padding: 2rem 1rem;
-  }
-
-  .tools .box-container {
-    grid-template-columns: 1fr;
-  }
-
-  .conteudo .box-container .boxes {
-    width: 100%;
-    padding: 3rem 2rem;
-  }
-
-  .conteudo .box-container .boxes p {
-    padding: 2rem 1rem;
-    font-size: 1.6rem;
-  }
-
   .about .row {
-    width: 100%;
     margin-left: 0;
   }
 
-  iframe {
-    width: 100%;
-    height: auto;
-  }
-
-}
 
 
