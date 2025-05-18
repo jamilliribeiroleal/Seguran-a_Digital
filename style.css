@@ -46,19 +46,10 @@ section {
     padding-bottom: 1.5rem;
 }
 
-.navbar {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-}
-
 .navbar a {
+    margin: 0 1rem;
     font-size: 1.8rem;
     color: #fff;
-    padding: 0.5rem 1rem;
-    white-space: nowrap;
 }
 
 .navbar a:hover {
@@ -71,7 +62,6 @@ section {
 .icons img {
     margin: 1rem;
     cursor: pointer;
-    visibility: visible;
 }
 
 .icons img:hover {
@@ -347,6 +337,96 @@ section {
   bottom: 0;
   width: 100%;
 }
+
+/* === RESPONSIVO PARA CELULARES === */
+@media (max-width: 768px) {
+  :root {
+    font-size: 9px;
+  }
+
+  /* 1. HOME-CONTEINER cobre toda a tela */
+  .home-conteiner {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  .home-conteiner section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 4rem 2rem;
+  }
+
+  .content {
+    padding: 0 2rem;
+  }
+
+  .content h3 {
+    font-size: 4.5rem;
+    padding-top: 100px;
+  }
+
+  .content p {
+    font-size: 2rem;
+    padding: 2rem;
+  }
+
+  .content .btn {
+    margin: 2rem auto;
+  }
+
+  /* 2. CENTRALIZA TODAS AS SECTIONs */
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 3rem 2rem;
+  }
+
+  /* 3. TOOLS (GRID) vira colunas */
+  .tools .box-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .tools .box-container .box {
+    width: 90%;
+  }
+
+  /* 4. CENTRALIZA VIDEO */
+  .video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .video iframe {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Outros ajustes úteis */
+
+  .intro .row,
+  .malware .row,
+  .about .row {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
 
 
 
