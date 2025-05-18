@@ -344,69 +344,6 @@ section {
     font-size: 9px;
   }
 
-  .header section {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    padding: 1rem;
-  }
-
-  .navbar {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .navbar a {
-    margin: 0.5rem 0;
-    font-size: 2rem;
-  }
-
-  .icons img {
-    margin: 0.5rem;
-    width: 30px;
-    height: 30px;
-  }
-
-  .home-conteiner section {
-    flex-direction: column;
-    text-align: center;
-    padding: 2rem;
-  }
-
-  .content h3 {
-    font-size: 4rem;
-    padding-top: 100px;
-  }
-
-  .content p {
-    font-size: 2rem;
-    padding: 2rem;
-  }
-
-  .content .btn {
-    margin: 2rem auto;
-  }
-
-  .intro .row,
-  .malware .row,
-  .about .row {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-left: 0;
-    width: 100%;
-  }
-
-  .intro .row img,
-  .malware .row .conteiner-image img {
-    margin: 0 auto;
-  }
-
-  .about .row {
-    margin-left: 0;
-  }
 
 
 
