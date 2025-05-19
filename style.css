@@ -172,13 +172,12 @@ section {
     align-items: center;
     background-color: var(--black);
     gap: 1.5rem;
-    margin-bottom: 4rem;
+    margin-bottom: 1rem;
 }
 
 .malware .row .conteiner-image img {
-    width: 250px;
+    width: 350px;
     margin-left: 2.0rem;
-
 }
 .malware .row .content {
     padding: 3rem;
@@ -212,7 +211,6 @@ section {
 .tools .box-container .box img {
     height: 10rem;
 }
-
 
 .tools .box-container .box h3 {
     color: #fff;
@@ -338,12 +336,16 @@ section {
   width: 100%;
 }
 
-/* === RESPONSIVO PARA CELULARES === */
-@media (max-width: 768px) {
+@media screen and (max-width: 770px) {
   :root {
     font-size: 9px;
   }
 
+  .header .logo img {
+    display: block;
+    margin: 0;
+
+  }
   /* 1. HOME-CONTEINER cobre toda a tela */
   .home-conteiner {
     background-position: center;
@@ -378,6 +380,61 @@ section {
     margin: 2rem auto;
   }
 
+   .intro .row,
+  .malware .row {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-left: 0;
+    width: 100%;
+  }
+
+    .intro .row .conteiner-image img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+  }
+
+   .intro .row .content h1 {
+    text-align: center; 
+    padding: 10px;
+  }
+
+  .intro .row .content h3 {
+    text-align: center;
+    padding: 10px; 
+  }
+
+  .intro .row .content p {
+    padding: 15px; 
+  }
+
+
+  .malware .row .conteiner-image img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+  }
+
+   .malware .row .content h3 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+    .malware .row .content p {
+    padding: 15px; 
+  }
+
+    .conteudo .box-container .boxes {
+    width: 80%;
+    padding: 3rem 2rem;
+}
+
+  .conteudo .box-container .boxes p {
+    padding: 1rem;
+  }
   /* 2. CENTRALIZA TODAS AS SECTIONs */
   section {
     display: flex;
@@ -396,7 +453,7 @@ section {
   }
 
   .tools .box-container .box {
-    width: 90%;
+    width: 70%;
   }
 
   /* 4. CENTRALIZA VIDEO */
@@ -414,31 +471,21 @@ section {
     height: auto;
   }
 
-  /* Outros ajustes úteis */
+  .about  h2{
+    line-height: 1.8rem;
 
-  .intro .row,
-  .malware .row,
+  }
   .about .row {
     flex-direction: column;
     align-items: center;
     text-align: center;
     margin-left: 0;
-    width: 100%;
+    width: 80%;
   }
 
-  .about .row .content,
-  .intro .row .content,
-  .malware .row .content {
+  .about .row .content p{
     padding: 2rem;
-  }
-
-  .conteudo .box-container .boxes {
-    width: 100%;
-    padding: 3rem 2rem;
-  }
-
-  .conteudo .box-container .boxes p {
-    padding: 1rem;
+    text-align: left;
   }
 
   .navbar {
@@ -448,10 +495,12 @@ section {
 
   .navbar a {
     margin: 1rem 0;
+    font-size: 1.5rem;
   }
 
   .icons {
     display: flex;
+    margin-left: auto;
     justify-content: center;
     flex-wrap: wrap;
   }
@@ -461,12 +510,35 @@ section {
     height: 30px;
     margin: 0.5rem;
   }
+  
+    .about .row {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-left: 0;
+    width: 90%;
+  }
+
+  .malware .row .content,
+  .intro .row .content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-left: 0;
+    width: 90%;
+  }
+  .malware .row .content,
+  .intro .row .content {
+    padding: 2rem;
+    text-align: left;
+  }
 
   .site-footer {
     font-size: 13px;
     padding: 20px 10px;
   }
 }
+
 
 
 
